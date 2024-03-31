@@ -3,7 +3,7 @@ import '../componentCss/Navbar.css'
 
 const Navbar = ({darkTheme, lightTheme}) => {
     const [theme, setTheme] = useState(true)
-    console.log(theme)
+    
 
     return (
         <header>
@@ -18,8 +18,7 @@ const Navbar = ({darkTheme, lightTheme}) => {
                     {theme === true ? (
                         <button
                             onClick={() => {
-                                setTheme(false)
-                                lightTheme()
+                                
                             }}
                             className="theme-switch"
                         >
@@ -32,8 +31,7 @@ const Navbar = ({darkTheme, lightTheme}) => {
                     ) : (
                         <button
                             onClick={() => {
-                                setTheme(true)
-                                darkTheme()
+                                
                             }}
                             className="theme-switch"
                         >
