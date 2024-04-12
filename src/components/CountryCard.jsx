@@ -5,7 +5,7 @@ const CountryCard = ({ countryData }) => {
     
 
     return countryData.map((country, i) => (
-        <NavLink className="country-link" key={i} to={country.name.common}>
+        <NavLink className="country-link" key={i} to={country.cca3}>
             <div className="country-card">
                 <div className="country-flag">
                     <img

@@ -1,0 +1,10 @@
+.border-country {
+    background-color: gray;
+    border-radius: 20%;
+    padding: 5px;
+    
+}
+.border-link {
+    text-decoration: none;
+    color: antiquewhite;
+}

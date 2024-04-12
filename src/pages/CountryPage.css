@@ -27,10 +27,13 @@
 .country-info-flag {
     width: 500px;
     height: auto;
+    border-radius: 5%;
 }
 .country-info-flag img {
     width: 100%;
     height: 100%;
+    border-radius: 5%;
+    object-fit: contain;
 }
 
 .country-name {
@@ -40,4 +43,16 @@
     display: flex;
     flex-direction: row;
     gap: 50px;
+}
+
+.border-countries {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.border-chips {
+    gap: 10px;
+    display: flex;
+    overflow-x: auto;
 }
