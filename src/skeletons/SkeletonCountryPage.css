@@ -1,0 +1,52 @@
+.country-info-flag-skeleton {
+    height: 275px;
+    width: 550px;
+    background-color: #535e6ac0;
+    border-radius: 4px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.country-title-skeleton {
+    margin-bottom: 20px;
+    height: 30px;
+    width: 200px;
+    background-color: #535e6ac0;
+    border-radius: 4px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-text-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.skeleton-text {
+    height: 12px;
+    width: 60px;
+    background-color: #535e6ac0;
+    border-radius: 4px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.border-countries-skeleton {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    gap: 20px;
+}
+.border-chip-skeleton {
+    background-color: #535e6ac0;
+    width: 50px;
+    height: 25px;
+    border-radius: 4px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: #464f59c0;
+    }
+    100% {
+      background-color: #6a7279;
+    }
+  }

@@ -1,8 +1,13 @@
 .border-country {
-    background-color: gray;
-    padding: 6px 8px;
-    border-radius: 20px;
-    
+    background-color: #535e6ac0;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+.border-country:hover {
+    background-color: #707983c0;
 }
 .border-link {
     text-decoration: none;

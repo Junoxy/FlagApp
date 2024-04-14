@@ -2,10 +2,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .not-found-content {
     width: 70%;
     padding-top: 40px;
+    background-color: #202c36;
+    height: 100vh;
+}
+
+.not-found-back-link {
+    text-decoration: none;
+}
+.not-found-back-button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.not-found-back-button:hover {
+    background-color: #f2f2f21f;
+    border-radius: 5px;
+}
+
+.not-found-back-button img {
+    height: 14px;
+    width: auto;
+}
+.not-found-back-text {
+    color: #f2f2f2;
+    font-size: 14px;
+}
+
+.not-found-text {
+    font-weight: 400;
 }

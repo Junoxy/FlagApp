@@ -27,18 +27,17 @@
     left: 10px;
     transform: translateY(-50%);
     transition: top 0.3s, font-size 0.3s;
-    
+    pointer-events: none;
   }
   
-  .searchbar input[type="text"]:focus + .placeholder,
-  .searchbar input[type="text"]:not(:placeholder-shown) + .placeholder {
-    top: 0;
+  .placeholder.active {
+    top: 0; 
+    font-size: 13px; 
+    padding: 0px 5px; 
     background-color: #202C36;
-    font-size: 13px;
-    padding: 0px 5px;
-    
-  }
-  .searchbar input[type="text"]:not(:focus) + .placeholder {
+}
+
+  .searchbar:active {
     top: 50%;
     font-size: inherit; 
   }

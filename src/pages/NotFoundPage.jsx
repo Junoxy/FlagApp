@@ -5,12 +5,14 @@ const NotFoundPage = () => {
     return (
         <div className="not-found">
             <div className="not-found-content">
-                <div className="back-button">
-                    <img src="../assets/arrow-left-dark.svg" alt="" />
-                <button><Link to="/">Back</Link></button>
-                </div>
-                
-                <h3>Country Not Found</h3>
+                <Link className="not-found-back-link" to="/">
+                    <button className="not-found-back-button">
+                        <img src="../assets/arrow-left.svg" alt="" />
+                        <p className="not-found-back-text">BACK</p>
+                    </button>
+                </Link>
+
+                <p className='not-found-text'>Country Not Found</p>
             </div>
         </div>
     )
