@@ -5,8 +5,9 @@ const CountryCard = ({ countryData }) => {
     
 
     return countryData.map((country, i) => (
-        <NavLink className="country-link" key={i} to={country.cca3}>
+        
             <div className="country-card">
+                <NavLink className="country-link" key={i} to={country.cca3}>
                 <div className="country-flag">
                     <img
                         src={country.flags.svg}
@@ -21,8 +22,9 @@ const CountryCard = ({ countryData }) => {
                     <p className="country-text">Region: {country.region}</p>
                     <p className="country-text">Capital: {country.capital}</p>
                 </div>
+                </NavLink>
             </div>
-        </NavLink>
+        
     ));
 };
 

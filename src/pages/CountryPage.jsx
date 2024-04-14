@@ -20,7 +20,7 @@ const CountryPage = () => {
                     languages
                 } = countryData;
                 
-                const nativeName = name.nativeName ? name.nativeName.common : "Unknown";
+                const nativeName = name.nativeName ? name.nativeName[Object.keys(name.nativeName)[0]].common : "Unknown";
                 const currency = currencies ? currencies[Object.keys(currencies)[0]].name : "Unknown";
                 const language = languages ? Object.values(languages)[0] : "Unknown";
 
@@ -37,7 +37,7 @@ const CountryPage = () => {
                                 <img src={flags.svg} alt={`${name.common} flag`} />
                             </div>
                             <div className="country-info-details">
-                                <h2 className="country-name">{name.common}</h2>
+                                <h2 className="country-title">{name.common}</h2>
                                 <div className="country-info-stats">
                                     <div className="country-info-stats-left">
                                         <p className="population">Population: {population}</p>

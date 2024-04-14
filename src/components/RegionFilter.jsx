@@ -4,8 +4,9 @@ const RegionFilter = ({onChange}) => {
     return(
         <div className="region-filter">
             
-            <div className="placeholder-text">Region</div>
-            <select onChange={onChange}>
+            
+            <select className='region-select' onChange={onChange}>
+                <option value="" disabled hidden selected> Region</option>
                 <option value="">All</option>
                 <option value="Africa">Africa</option>
                 <option value="Americas">Americas</option>
@@ -13,6 +14,7 @@ const RegionFilter = ({onChange}) => {
                 <option value="Europe">Europe</option>
                 <option value="Oceania">Oceania</option>
             </select>
+            
         </div>
         
     )

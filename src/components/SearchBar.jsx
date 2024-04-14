@@ -1,16 +1,15 @@
 import './SearchBar.css'
 
-const SearchBar = ({onChange}) => {
+const SearchBar = ({ onChange }) => {
     return (
         <div className="searchbar">
-            <input 
-            type="text"
-            placeholder='Search countries'
-            onChange={onChange}
+            <input
+                type="text"
+                onChange={onChange}
             />
-
+            <span className="placeholder">Search countries...</span> 
         </div>
-    )
-}
+    );
+};
 
 export default SearchBar

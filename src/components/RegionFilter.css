@@ -1,0 +1,25 @@
+.region-select {
+    appearance: none;
+    outline: none;
+    border: none;
+    width: 175px;
+    height: 57px;
+    border: 1px solid #f2f2f25e;
+    border-radius: 5px;
+    position: relative;
+    background-color: transparent;
+}
+
+.region-select:hover {
+    border: 1px solid #f2f2f2;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .region-filter {
+      width: 50%;
+    }
+    .region-select {
+        width: 100%;
+    }
+  }

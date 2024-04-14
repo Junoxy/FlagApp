@@ -14,6 +14,7 @@ const HomePage = () => {
     const [searchQuery, setSearchQuery] = useState('')
     const [selectedRegion, setSelectedRegion] = useState(null)
     const [matchesFound, setMatchesFound] = useState(true);
+    const [loading, setLoading] = useState(true)
     const navigate = useNavigate()
     console.log(countryData)
 
@@ -25,6 +26,13 @@ const HomePage = () => {
         
         return matchesSearch && matchesRegion;
     });
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 15000);
+        
+    }, [countryData]);
 
     useEffect(() => {
         setMatchesFound(filteredCountries.length > 0);
@@ -56,7 +64,7 @@ const HomePage = () => {
             </div>
             <div className="home-page-content">
                 
-                {matchesFound && <Countries countryData={CountriesFiltered} />}
+                {matchesFound && <Countries countryData={CountriesFiltered} loading={loading}/>}
             </div>
         </div>
     )

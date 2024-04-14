@@ -6,7 +6,7 @@ const Navbar = () => {
             <div className="navbar-content">
                 <div className="app-title">The Flag App</div>
                 <div className="logo">
-                    <img src="../assets/techover-logo-dark.png" alt="techover logo" />
+                    <img src="../assets/techover-logo.png" alt="techover logo" />
                 </div>
                 <div className="switch-theme">
                     <img src="../assets/moon-bordered.svg" alt="" />

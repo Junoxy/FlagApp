@@ -36,7 +36,7 @@
     object-fit: contain;
 }
 
-.country-name {
+.country-title {
     padding-bottom: 20px;
 }
 .country-info-stats {
@@ -49,6 +49,7 @@
     display: flex;
     padding-top: 30px;
     align-items: center;
+    gap: 20px;
 }
 
 .border-chips {
