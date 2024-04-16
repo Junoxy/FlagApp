@@ -1,28 +1,33 @@
 import './CountryPage.css'
 import BorderChip from '../components/BorderChip'
 import SkeletonCountryPage from '../skeletons/SkeletonCountryPage'
-import { useLoaderData, useParams, Link, useOutletContext } from 'react-router-dom'
+import {
+    useLoaderData,
+    useParams,
+    Link,
+    useOutletContext,
+} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 const CountryPage = () => {
     const [loading, setLoading] = useState(true)
-    const [theme,setTheme,currentTheme] = useOutletContext()
+    const [theme, setTheme, currentTheme] = useOutletContext()
     const { country } = useParams()
     const selectedCountry = useLoaderData()
 
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 4000);
-        
+        }, 0)
     }, [selectedCountry])
 
-    
     return (
-        <div className="country-page" style={{backgroundColor: currentTheme.bgColor}}>
-            {loading ? 
+        <div
+            className="country-page"
+        >
+            {loading ? (
                 <SkeletonCountryPage />
-             : 
+            ) : (
                 selectedCountry.map((countryData, i) => {
                     const {
                         flags,
@@ -48,15 +53,24 @@ const CountryPage = () => {
 
                     return (
                         <div key={i} className="country-content">
-                            <Link className="back-link" to="/">
-                                <button className="back-button" >
-                                    <img
-                                        src={currentTheme.backButtonImg}
-                                        alt=""
-                                    />
-                                    <p className="back-text" style={{color: currentTheme.textColor}}>BACK</p>
-                                </button>
-                            </Link>
+                            <div className="back-button-container">
+                                <Link className="back-link" to="/">
+                                    <button className="back-button">
+                                        <img
+                                            src={currentTheme.backButtonImg}
+                                            alt=""
+                                        />
+                                        <p
+                                            className="back-text"
+                                            style={{
+                                                color: currentTheme.textColor,
+                                            }}
+                                        >
+                                            BACK
+                                        </p>
+                                    </button>
+                                </Link>
+                            </div>
 
                             <div className="country-info">
                                 <div className="country-info-flag">
@@ -66,10 +80,20 @@ const CountryPage = () => {
                                     />
                                 </div>
                                 <div className="country-info-details">
-                                    <h1 className="country-title" style={{color: currentTheme.textColor}}>
+                                    <h1
+                                        className="country-title"
+                                        style={{
+                                            color: currentTheme.textColor,
+                                        }}
+                                    >
                                         {name.common}
                                     </h1>
-                                    <div className="country-info-stats" style={{color: currentTheme.textColor}}>
+                                    <div
+                                        className="country-info-stats"
+                                        style={{
+                                            color: currentTheme.textColor,
+                                        }}
+                                    >
                                         <div className="country-info-stats-left">
                                             <p className="population">
                                                 <strong>Population:</strong>{' '}
@@ -105,9 +129,15 @@ const CountryPage = () => {
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="border-countries" >
+                                    <div className="border-countries">
                                         <p className="border-countries-title">
-                                            <strong style={{color: currentTheme.textColor}}>Border Countries:</strong>
+                                            <strong
+                                                style={{
+                                                    color: currentTheme.textColor,
+                                                }}
+                                            >
+                                                Border Countries:
+                                            </strong>
                                         </p>
                                         <div className="border-chips">
                                             <BorderChip />
@@ -118,7 +148,7 @@ const CountryPage = () => {
                         </div>
                     )
                 })
-            }
+            )}
         </div>
     )
 }

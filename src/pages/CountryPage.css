@@ -1,12 +1,11 @@
 .country-page {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #202c36;
+    width: 75%;
+    height: 100%;
+    margin: auto;
 }
-
+.country-content {
+    padding-top: 30px;
+}
 .back-link {
     text-decoration: none;
 }
@@ -35,41 +34,42 @@
     color: #f2f2f2;
     text-decoration: none;
     font-size: 14px;
-
-}
-.country-content {
-    width: 70%;
-    height: 90%;
 }
 
 .country-info {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     gap: 60px;
 }
 
 .country-info-flag {
-    width: 500px;
+    max-width: 50%;
     height: auto;
-    border-radius: 3%;
+    
 }
 .country-info-flag img {
     width: 100%;
-    height: 100%;
-    border-radius: 3%;
-    object-fit: contain;
+    height: auto;
+    border-radius: 20px;
+}
+
+.country-info-details {
+    max-width: 50%;
 }
 
 .country-title {
     font-size: 3rem;
     font-weight: 400;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 .country-info-stats {
     display: flex;
-    flex-direction: row;
-    gap: 80px;
+    gap: 50px;
+    padding-bottom: 50px;
 }
+
 .country-info-stats-left {
     display: flex;
     flex-direction: column;
@@ -83,22 +83,51 @@
     color: inherit;
 }
 .country-info-stats-left p,
-.country-info-stats-left strong,
 .country-info-stats-right p,
-.country-info-stats-right strong {
+.country-info-stats-left strong,
+.country-info-stats-right strong  {
     color: inherit;
 }
 .border-countries {
     display: flex;
-    padding-top: 30px;
+    gap: 15px;
     align-items: center;
-    gap: 20px;
 }
-
-
 
 .border-chips {
     gap: 10px;
     display: flex;
+    max-width: 100%;
     overflow-x: auto;
+}
+
+@media screen and (max-width: 900px) {
+    .country-info {
+        flex-direction: column;
+    }
+    .country-info-flag {
+    max-width: 100%;
+    height: auto;
+    
+}
+.country-info-flag img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.country-info-details {
+    max-width: 50%;
+}
+.country-info-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 50px;
+}
+.border-countries {
+    padding-bottom: 40px;
+    max-width: 200%;
+    width: 200%;
+}
 }

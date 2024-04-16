@@ -7,13 +7,13 @@ const SkeletonLoaderCard = () => {
             <div className="country-details-skeleton">
                 <h4 className="country-name-skeleton"></h4>
                 <p className="country-text">
-                    Population: <div className="country-text-skeleton-pop"></div>
+                    Population: <span className="country-text-skeleton-pop"></span>
                 </p>
                 <p className="country-text">
-                    Region: <div className="country-text-skeleton"></div>
+                    Region: <span className="country-text-skeleton"></span>
                 </p>
                 <p className="country-text">
-                    Capital: <div className="country-text-skeleton"></div>
+                    Capital: <span className="country-text-skeleton"></span>
                 </p>
             </div>
         </div>

@@ -3,6 +3,7 @@
 export const darkTheme = {
     //global
     bgColor: '#202C36',
+    bgColor2: '#2B3844',
     textColor: '#f2f2f2',
     muteTextColor: 'rgba(255, 255, 255, 0.7)',
     // nav
@@ -13,6 +14,7 @@ export const darkTheme = {
     // filtering
     borderHoverColor: '#f2f2f2',
     focusBorder: ' 2px solid #f2f2f2',
+    downArrow: '../assets/arrow-down-light.svg',
     // countryPage
     backButtonImg: '../assets/arrow-left.svg',
     borderChipBg: 'rgba(255, 255, 255, 0.16)',
@@ -23,6 +25,7 @@ export const darkTheme = {
 export const lightTheme = {
     //global
     bgColor: '#f2f2f2',
+    bgColor2: '#f2f2f2',
     textColor: 'black',
     muteTextColor: 'rgba(0, 0, 0, 0.6)',
     backButtonImg: '../assets/arrow-left-dark.svg',
@@ -34,6 +37,7 @@ export const lightTheme = {
     // filtering
     borderHoverColor: 'black',
     focusBorder: ' 2px solid black',
+    downArrow: '../assets/arrow-down-dark.svg',
     // countryPage
     borderChipBg: 'rgba(0, 0, 0, 0.08)',
     borderChipBgHover: 'rgba(106, 100, 100, 0.222)'

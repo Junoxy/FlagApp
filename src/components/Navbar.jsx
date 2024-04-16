@@ -7,7 +7,7 @@ const Navbar = ({ theme, setTheme ,currentTheme }) => {
     }
     
     return (
-        <nav className="navbar" style={{backgroundColor:currentTheme.navBgColor}}>
+        <nav className="navbar" style={{backgroundColor: currentTheme.navBgColor}}>
             <div className="navbar-content">
                 <div className="app-title" style={{color: currentTheme.textColor}}>The Flag App</div>
                 <div className="logo">

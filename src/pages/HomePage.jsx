@@ -2,14 +2,13 @@ import './HomePage.css'
 import SearchBar from '../components/SearchBar'
 import RegionFilter from '../components/RegionFilter'
 import Countries from '../components/Countries'
-import { useLoaderData, useNavigate} from 'react-router-dom'
+import { useLoaderData, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-
 
 const HomePage = () => {
     const countryData = useLoaderData()
     const [searchQuery, setSearchQuery] = useState('')
-    const [selectedRegion, setSelectedRegion] = useState(null)
+    const [selectedRegion, setSelectedRegion] = useState(undefined)
     const [matchesFound, setMatchesFound] = useState(true)
     const [loading, setLoading] = useState(true)
     const navigate = useNavigate()
@@ -29,8 +28,7 @@ const HomePage = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 3000);
-        
+        }, 3000)
     }, [countryData])
 
     useEffect(() => {
@@ -46,19 +44,20 @@ const HomePage = () => {
         setSearchQuery(event.target.value)
     }
 
-    const handleRegionFilterChange = (event) => {
-        setSelectedRegion(event.target.value)
-        console.log(selectedRegion)
-    }
-
     const CountriesFiltered = filteredCountries.sort((a, b) =>
         a.name.common.localeCompare(b.name.common)
     )
     return (
         <div className="home-page">
             <div className="filtering-options">
-                <SearchBar onChange={handleSearchChange} searchQuery={searchQuery} />
-                <RegionFilter onChange={handleRegionFilterChange} />
+                <SearchBar
+                    onChange={handleSearchChange}
+                    searchQuery={searchQuery}
+                />
+                <RegionFilter
+                    selectedRegion={selectedRegion}
+                    setSelectedRegion={setSelectedRegion}
+                />
             </div>
             <div className="home-page-content">
                 {matchesFound && (
