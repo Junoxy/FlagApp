@@ -42,7 +42,7 @@
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    transition: 0.3s, font-size 0.3s;
+    transition:  font-size 0.3s;
     pointer-events: none;
 }
 .region-placeholder.active {
