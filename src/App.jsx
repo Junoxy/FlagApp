@@ -13,6 +13,7 @@ import Countries from './components/Countries'
 import { countryDataLoader } from './pages/HomePage'
 import { countryPageLoader } from './pages/CountryPage'
 
+
 const routesFromElements = createRoutesFromElements(
     <Route path='/' element={<RootLayout/>} >
         <Route path='/' element={<HomePage/>} loader={countryDataLoader}>
@@ -29,7 +30,7 @@ function App() {
     
 
     return (
-        <>
+        <div className='app'>
             <Helmet>
             <link rel="preconnect" href="https://fonts.googleapis.com"/>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -37,7 +38,7 @@ function App() {
             >
             </Helmet>
             <RouterProvider router={router}/>
-        </>
+        </div>
     )
 }
 

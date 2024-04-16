@@ -1,6 +1,7 @@
 
 .home-page {
     width: 75%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;

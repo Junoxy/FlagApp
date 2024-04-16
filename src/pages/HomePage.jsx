@@ -2,8 +2,9 @@ import './HomePage.css'
 import SearchBar from '../components/SearchBar'
 import RegionFilter from '../components/RegionFilter'
 import Countries from '../components/Countries'
-import { useLoaderData, useNavigate } from 'react-router-dom'
+import { useLoaderData, useNavigate} from 'react-router-dom'
 import { useState, useEffect } from 'react'
+
 
 const HomePage = () => {
     const countryData = useLoaderData()
@@ -12,7 +13,6 @@ const HomePage = () => {
     const [matchesFound, setMatchesFound] = useState(true)
     const [loading, setLoading] = useState(true)
     const navigate = useNavigate()
-    console.log(countryData)
 
     const filteredCountries = countryData.filter((country) => {
         const matchesSearch = country.name.common
@@ -27,7 +27,10 @@ const HomePage = () => {
     })
 
     useEffect(() => {
-        setLoading(false)
+        setTimeout(() => {
+            setLoading(false)
+        }, 3000);
+        
     }, [countryData])
 
     useEffect(() => {

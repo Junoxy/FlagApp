@@ -1,15 +1,11 @@
 .border-country {
-    background-color: #535e6ac0;
     padding: 6px 10px;
     border-radius: 16px;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     transition: 0.3s ease;
-}
-.border-country:hover {
-    background-color: #707983c0;
 }
 .border-link {
     text-decoration: none;
-    color: antiquewhite;
+    
 }

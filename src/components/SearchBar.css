@@ -1,7 +1,7 @@
 .searchbar {
     position: relative;
     width: 350px; 
-    border: 1px solid #f2f2f25e;
+    border: 1.5px solid #9393935e;
     border-radius: 5px;
     transition: 0s ;
   }
@@ -26,7 +26,7 @@
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    transition: top 0.3s, font-size 0.3s;
+    transition:  0.3s, font-size 0.3s;
     pointer-events: none;
   }
   

@@ -4,10 +4,11 @@
     border: none;
     width: 175px;
     height: 57px;
-    border: 1px solid #f2f2f25e;
+    border: 1.5px solid #9393935e;
     border-radius: 5px;
     position: relative;
     background-color: transparent;
+    
 }
 
 .region-select:hover {

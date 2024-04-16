@@ -7,7 +7,7 @@
 .not-found-content {
     width: 70%;
     padding-top: 40px;
-    background-color: #202c36;
+    background-color: transparent;
     height: 100vh;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .not-found-back-button:hover {
-    background-color: #f2f2f21f;
+    background-color: #b3a9a91f;
     border-radius: 5px;
 }
 
@@ -36,7 +36,7 @@
     width: auto;
 }
 .not-found-back-text {
-    color: #f2f2f2;
+    color: inherit;
     font-size: 14px;
 }
 

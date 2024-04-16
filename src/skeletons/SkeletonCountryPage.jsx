@@ -24,33 +24,33 @@ const SkeletonCountryPage = () => {
                                     <div className="country-info-stats-left">
                                         <p className="skeleton-text-container">
                                            <strong>Population:</strong> 
-                                           <div className="skeleton-text"></div>
+                                           <span className="skeleton-text"></span>
                                         </p>
                                         <p className="skeleton-text-container">
                                             <strong>Region:</strong> 
-                                            <div className="skeleton-text"></div>
+                                            <span className="skeleton-text"></span>
                                         </p>
                                         <p className="skeleton-text-container">
                                             <strong>Capital:</strong> 
-                                            <div className="skeleton-text"></div>
+                                            <span className="skeleton-text"></span>
                                         </p>
                                         <p className="skeleton-text-container">
                                             <strong>Native name:</strong> 
-                                            <div className="skeleton-text"></div>
+                                            <span className="skeleton-text"></span>
                                         </p>
                                     </div>
                                     <div className="country-info-stats-right">
                                         <p className="skeleton-text-container">
                                             <strong>Top Level Domain:</strong> 
-                                            <div className="skeleton-text"></div>
+                                            <span className="skeleton-text"></span>
                                         </p>
                                         <p className="skeleton-text-container">
                                             <strong>Currencies:</strong> 
-                                            <div className="skeleton-text"></div>
+                                            <span className="skeleton-text"></span>
                                         </p>
                                         <p className="skeleton-text-container">
                                             <strong>Language:</strong> 
-                                            <div className="skeleton-text"></div>
+                                            <span className="skeleton-text"></span>
                                         </p>
                                     </div>
                                 </div>

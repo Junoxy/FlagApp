@@ -1,21 +1,27 @@
 import './Navbar.css'
-
-const Navbar = () => {
+const Navbar = ({ theme, setTheme ,currentTheme }) => {
+    
+    const switchTheme = () => {
+        setTheme(!theme ? true : false)
+        console.log(theme)
+    }
+    
     return (
-        <nav className="navbar">
+        <nav className="navbar" style={{backgroundColor:currentTheme.navBgColor}}>
             <div className="navbar-content">
-                <div className="app-title">The Flag App</div>
+                <div className="app-title" style={{color: currentTheme.textColor}}>The Flag App</div>
                 <div className="logo">
-                    <img src="../assets/techover-logo.png" alt="techover logo" />
+                    <img src={currentTheme.techOverLogo} alt="techover logo" />
                 </div>
-                <div className="switch-theme">
-                    <img src="../assets/moon-bordered.svg" alt="" />
-                    <button className="light-dark-button">DARK MODE</button>
+                <div className="switch-theme" onClick={switchTheme}>
+                    <img src={currentTheme.switchThemeImg} alt="" />
+                    <button  className="light-dark-button" style={{color: currentTheme.textColor}}>
+                        {currentTheme.switchThemeButtonText}
+                    </button>
                 </div>
             </div>
-            
         </nav>
     )
 }
 
-export default Navbar;
+export default Navbar

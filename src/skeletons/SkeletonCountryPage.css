@@ -1,7 +1,7 @@
 .country-info-flag-skeleton {
     height: 275px;
     width: 550px;
-    background-color: #535e6ac0;
+    background-color: transparent;
     border-radius: 4px;
     animation: skeleton-loading 1s linear infinite alternate;
 }
@@ -10,7 +10,7 @@
     margin-bottom: 20px;
     height: 30px;
     width: 200px;
-    background-color: #535e6ac0;
+    background-color: transparent;
     border-radius: 4px;
     animation: skeleton-loading 1s linear infinite alternate;
 }
@@ -23,7 +23,7 @@
 .skeleton-text {
     height: 12px;
     width: 60px;
-    background-color: #535e6ac0;
+    background-color: transparent;
     border-radius: 4px;
     animation: skeleton-loading 1s linear infinite alternate;
 }
@@ -35,7 +35,7 @@
     gap: 20px;
 }
 .border-chip-skeleton {
-    background-color: #535e6ac0;
+    background-color: transparent;
     width: 50px;
     height: 25px;
     border-radius: 4px;
@@ -44,9 +44,9 @@
 
 @keyframes skeleton-loading {
     0% {
-      background-color: #464f59c0;
+      background-color: #f7f8f861;
     }
     100% {
-      background-color: #6a7279;
+      background-color: #a4a7aa71;
     }
   }
