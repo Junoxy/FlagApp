@@ -1,2 +1,2 @@
-- [Github repository](https://ditt-repo-här)
-- [Deployat projekt](https://ditt-projekt-här)
+- [Github repository](https://github.com/Junoxy/FlagApp/tree/v3)
+- [Deployat projekt](https://661ea7b58ce25d3455561c7e--timely-concha-a48fad.netlify.app/)

@@ -138,6 +138,7 @@ const CountryPage = () => {
                                             >
                                                 Border Countries:
                                             </strong>
+                                        
                                         </p>
                                         <div className="border-chips">
                                             <BorderChip />

@@ -11,7 +11,7 @@ const BorderChip = () => {
     )
 
     if (borderingCountries[0] === undefined) {
-        return <p>No bordering countries</p>
+        return <p style={{color: currentTheme.textColor}}>No bordering countries</p>
     }
 
     return borderingCountries.map((country, i) => {

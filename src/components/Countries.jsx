@@ -5,24 +5,11 @@ import SkeletonLoaderCard from '../skeletons/SkeletonLoaderCards'
 const Countries = ({ countryData, loading }) => {
     return (
         <div className="countries">
-            {loading ? 
-                <div className="countries">
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                    <SkeletonLoaderCard />
-                </div>
-            : 
+            {loading ? (
+                <SkeletonLoaderCard />
+            ) : (
                 <CountryCard countryData={countryData} />
-            }
+            )}
         </div>
     )
 }

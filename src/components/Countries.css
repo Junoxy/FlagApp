@@ -1,13 +1,14 @@
-.countries {
+/* .countries {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+} */
+
+.countries {
+    display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(275px, 1fr)); /* Create flexible grid columns */
+        grid-gap: 20px; /* Adjust the gap between cards */
 }
 
-@media screen and (max-width: 900px) {
-    .countries {
-        justify-content: center;
-    }
-    
-    }
+
