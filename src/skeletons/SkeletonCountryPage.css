@@ -50,3 +50,34 @@
       background-color: #a4a7aa71;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    .country-info {
+        flex-direction: column;
+    }
+    .country-info-flag-skeleton {
+    max-width: 100%;
+    height: 150px;
+    
+}
+.country-info-flag-skeleton img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.country-info-details {
+    max-width: 50%;
+}
+.country-info-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-bottom: 50px;
+}
+.border-countries-skeleton {
+    padding-bottom: 40px;
+    max-width: 200%;
+    width: 200%;
+}
+}
