@@ -36,6 +36,7 @@ const SearchBar = ({ onChange, searchQuery }) => {
                 onChange={onChange}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
+                style={{color: currentTheme.textColor}}
             />
             <span
                 className={`placeholder ${
