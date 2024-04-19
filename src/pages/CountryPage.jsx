@@ -18,7 +18,7 @@ const CountryPage = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoading(false)
-        }, 100000)
+        }, 3000)
     }, [selectedCountry])
 
     return (
